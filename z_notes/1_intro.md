@@ -10,6 +10,26 @@ https://app.graphcms.com/ff30a9e80bf749d495d42c5006703ec6/master/settings/api-ac
 
 ==
 
+https://app.graphcms.com/ff30a9e80bf749d495d42c5006703ec6/master/graphiql
+
+query Posts {
+  posts {
+    title
+    slug
+    date
+    excerpt
+    tags
+    coverImage{
+      url
+    }
+  }
+}
+
+
+
+
+==
+
 svelte@next to create sveltekit project
 
 npm init svelte@next blog_spence
