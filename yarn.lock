@@ -81,6 +81,11 @@
     "estree-walker" "^2.0.1"
     "picomatch" "^2.2.2"
 
+"@sveltejs/adapter-static@^1.0.0-next.21":
+  "integrity" "sha512-B4+QoUVAaANKx+mHntG8SqF45zbj3Ct4Akg/cGauo6COyfKZRhO5OsMa+wPuT2TKJBZC4eEDK0p+p9nyQBkxKQ=="
+  "resolved" "https://registry.npmjs.org/@sveltejs/adapter-static/-/adapter-static-1.0.0-next.21.tgz"
+  "version" "1.0.0-next.21"
+
 "@sveltejs/kit@next":
   "integrity" "sha512-Vmd6Oq/fI5M7LEJjXd+AOoTy7ICNT7+4rAMJttyeMjqmRhQ0i5h+NgBoVOQE1L3fwUNZtdW2ucUm+MMa9ZPTpw=="
   "resolved" "https://registry.npmjs.org/@sveltejs/kit/-/kit-1.0.0-next.189.tgz"
