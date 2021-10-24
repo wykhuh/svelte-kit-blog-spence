@@ -11,9 +11,17 @@
 </script>
 
 <script>
+  import { onMount } from 'svelte'
+  import { themeChange } from 'theme-change'
   import Nav from '../components/nav.svelte'
-  export let pages;
   import '../app.css';
+
+
+  onMount(async () => {
+    themeChange(false)
+  })
+
+  export let pages;
 </script>
 
 <Nav {pages}/>

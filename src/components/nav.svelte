@@ -1,5 +1,5 @@
 <script>
-  // import ThemeSelect from './theme-select.svelte'
+  import ThemeSelect from './theme-select.svelte'
   export let pages
 </script>
 
@@ -20,6 +20,6 @@
     </div>
   </div>
   <div class="navbar-end">
-    <!-- <ThemeSelect /> -->
+    <ThemeSelect />
   </div>
 </div>
