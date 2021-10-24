@@ -4,7 +4,9 @@ https://app.graphcms.com
 
 https://app.graphcms.com/ff30a9e80bf749d495d42c5006703ec6/master
 
+api endpoint
 
+https://app.graphcms.com/ff30a9e80bf749d495d42c5006703ec6/master/settings/api-access#root
 
 ==
 
