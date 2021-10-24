@@ -1,21 +1,27 @@
 <script context="module">
   // load post before rendering components
-  export const load = async ({fetch, page: {params}}) => {
-    const {slug} = params
-    const res = await fetch(`/posts/${slug}.json`)
-    if(res.ok) {
-      const {post} = await res.json()
+  export const load = async ({ fetch, page: { params } }) => {
+    const { slug } = params;
+    const res = await fetch(`/posts/${slug}.json`);
+    if (res.ok) {
+      const { post } = await res.json();
       // make post available as props
-      return {props: {post}}
+      return { props: { post } };
     }
-  }
+  };
 </script>
-
 
 <script>
   // make posts availble to html template
   export let post;
-  const {title, date, tags, author:{name, authorTitle, picture}, content: {html}, coverImage} = post
+  const {
+    title,
+    date,
+    tags,
+    author: { name, authorTitle, picture },
+    content: { html },
+    coverImage,
+  } = post;
 </script>
 
 <svelte:head>
@@ -23,11 +29,7 @@
 </svelte:head>
 
 <div class="sm:-mx-5 md:-mx-10 lg:-mx-20 xl:-mx-38 mb-5">
-  <img
-    src={post.coverImage.url}
-    alt={`Cover image for ${title}`}
-    class=""
-  />
+  <img src={post.coverImage.url} alt={`Cover image for ${title}`} class="" />
 </div>
 
 <h1 class="text-4xl font-semibold mb-5">{title}</h1>
@@ -40,9 +42,7 @@
   />
   <span class="flex-grow flex flex-col pl-4">
     <span class="title-font font-medium">{name}</span>
-    <span class="text-secondary text-xs tracking-widest mt-0.5"
-      >{authorTitle}</span
-    >
+    <span class="text-secondary text-xs tracking-widest mt-0.5">{authorTitle}</span>
   </span>
 </a>
 

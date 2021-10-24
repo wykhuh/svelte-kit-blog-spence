@@ -1,32 +1,30 @@
 <script context="module">
   export const load = async ({ fetch }) => {
-    const res = await fetch('/pages.json')
+    const res = await fetch('/pages.json');
     if (res.ok) {
-      const { pages } = await res.json()
+      const { pages } = await res.json();
       return {
         props: { pages },
-      }
+      };
     }
-  }
+  };
 </script>
 
 <script>
-  import { onMount } from 'svelte'
-  import { themeChange } from 'theme-change'
-  import Nav from '../components/nav.svelte'
+  import { onMount } from 'svelte';
+  import { themeChange } from 'theme-change';
+  import Nav from '../components/nav.svelte';
   import '../app.css';
 
-
   onMount(async () => {
-    themeChange(false)
-  })
+    themeChange(false);
+  });
 
   export let pages;
 </script>
 
-<Nav {pages}/>
+<Nav {pages} />
 
 <main class="container max-w-xl mx-auto px-4">
   <slot />
 </main>
-

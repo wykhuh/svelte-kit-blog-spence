@@ -1,11 +1,9 @@
 <script>
-  import ThemeSelect from './theme-select.svelte'
-  export let pages
+  import ThemeSelect from './theme-select.svelte';
+  export let pages;
 </script>
 
-<div
-  class="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box"
->
+<div class="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box">
   <div class="px-2 mx-2 navbar-start">
     <span class="text-lg font-bold"> Blog </span>
   </div>
@@ -13,9 +11,7 @@
     <div class="flex items-stretch">
       <a class="btn btn-ghost btn-sm rounded-btn" href={`/`}>Home</a>
       {#each pages as { title, slug }}
-        <a class="btn btn-ghost btn-sm rounded-btn" href={`/${slug}`}
-          >{title}</a
-        >
+        <a class="btn btn-ghost btn-sm rounded-btn" href={`/${slug}`}>{title}</a>
       {/each}
     </div>
   </div>

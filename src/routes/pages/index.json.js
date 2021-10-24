@@ -1,5 +1,5 @@
-import {client} from '$lib/graphql_client'
-import {gql} from 'graphql-request'
+import { client } from '$lib/graphql_client';
+import { gql } from 'graphql-request';
 
 export const get = async () => {
   try {
@@ -13,18 +13,18 @@ export const get = async () => {
           }
         }
       }
-    `
+    `;
 
-    const {pages} = await client.request(query)
+    const { pages } = await client.request(query);
 
     return {
       status: 200,
-      body: {pages}
-    }
-  } catch(error) {
+      body: { pages },
+    };
+  } catch (error) {
     return {
       status: 500,
-      body: {error: 'Server error!'}
-    }
+      body: { error: 'Server error!' },
+    };
   }
-}
+};

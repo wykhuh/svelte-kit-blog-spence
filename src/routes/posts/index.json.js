@@ -1,5 +1,5 @@
-import {client} from '$lib/graphql_client'
-import {gql} from 'graphql-request'
+import { client } from '$lib/graphql_client';
+import { gql } from 'graphql-request';
 
 export const get = async () => {
   try {
@@ -11,23 +11,23 @@ export const get = async () => {
           date
           excerpt
           tags
-          coverImage{
+          coverImage {
             url
           }
         }
       }
-    `
+    `;
 
-    const {posts} = await client.request(query)
+    const { posts } = await client.request(query);
 
     return {
       status: 200,
-      body: {posts}
-    }
-  } catch(error) {
+      body: { posts },
+    };
+  } catch (error) {
     return {
       status: 500,
-      body: {error: 'Server error!'}
-    }
+      body: { error: 'Server error!' },
+    };
   }
-}
+};
