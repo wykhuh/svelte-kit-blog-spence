@@ -86,10 +86,12 @@
   "resolved" "https://registry.npmjs.org/@sveltejs/adapter-static/-/adapter-static-1.0.0-next.21.tgz"
   "version" "1.0.0-next.21"
 
-"@sveltejs/adapter-vercel@^1.0.0-next.0":
-  "integrity" "sha512-dQf40/2vrgRfuQ++tIAlvEgjdGUkXJTSjO5syqJd5oH2HDbP3Shi+2AxWpKAqRFGyRbXDe9ej0MK1G2soZP4fQ=="
-  "resolved" "https://registry.npmjs.org/@sveltejs/adapter-vercel/-/adapter-vercel-1.0.0-next.0.tgz"
-  "version" "1.0.0-next.0"
+"@sveltejs/adapter-vercel@^1.0.0-next.31":
+  "integrity" "sha512-W8p/U00B6ihVrDpwMkgEexfVUzaLmn4MRtXj//Gw4NDFfsrZR4P5wBidrOAIkCYBMvqCOHD+vbAvIiAMOaN23g=="
+  "resolved" "https://registry.npmjs.org/@sveltejs/adapter-vercel/-/adapter-vercel-1.0.0-next.31.tgz"
+  "version" "1.0.0-next.31"
+  dependencies:
+    "esbuild" "^0.13.4"
 
 "@sveltejs/kit@next":
   "integrity" "sha512-Vmd6Oq/fI5M7LEJjXd+AOoTy7ICNT7+4rAMJttyeMjqmRhQ0i5h+NgBoVOQE1L3fwUNZtdW2ucUm+MMa9ZPTpw=="
@@ -720,7 +722,7 @@
   "resolved" "https://registry.npmjs.org/esbuild-darwin-arm64/-/esbuild-darwin-arm64-0.13.9.tgz"
   "version" "0.13.9"
 
-"esbuild@^0.13.2":
+"esbuild@^0.13.2", "esbuild@^0.13.4":
   "integrity" "sha512-8bYcckmisXjGvBMeylp1PRtu21uOoCDFAgXGGF2BR241zYQDN6ZLNvcmQlnQ7olG0p6PRWmJI8WVH3ca8viPuw=="
   "resolved" "https://registry.npmjs.org/esbuild/-/esbuild-0.13.9.tgz"
   "version" "0.13.9"
