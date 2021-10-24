@@ -86,6 +86,11 @@
   "resolved" "https://registry.npmjs.org/@sveltejs/adapter-static/-/adapter-static-1.0.0-next.21.tgz"
   "version" "1.0.0-next.21"
 
+"@sveltejs/adapter-vercel@^1.0.0-next.0":
+  "integrity" "sha512-dQf40/2vrgRfuQ++tIAlvEgjdGUkXJTSjO5syqJd5oH2HDbP3Shi+2AxWpKAqRFGyRbXDe9ej0MK1G2soZP4fQ=="
+  "resolved" "https://registry.npmjs.org/@sveltejs/adapter-vercel/-/adapter-vercel-1.0.0-next.0.tgz"
+  "version" "1.0.0-next.0"
+
 "@sveltejs/kit@next":
   "integrity" "sha512-Vmd6Oq/fI5M7LEJjXd+AOoTy7ICNT7+4rAMJttyeMjqmRhQ0i5h+NgBoVOQE1L3fwUNZtdW2ucUm+MMa9ZPTpw=="
   "resolved" "https://registry.npmjs.org/@sveltejs/kit/-/kit-1.0.0-next.189.tgz"
